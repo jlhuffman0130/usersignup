@@ -90,8 +90,31 @@ end
 	else
 		return "invalid"
 	end
+end
+
+
+def password_is_correct(password, verify_password)
+	password = password.to_s
+	if password = verify_password
+		"valid"
+	else
+		"invalid"
+end
+
+
+
+
+
+
+
+
 
 end
+
+
+
+
+
 
 
 
