@@ -16,3 +16,11 @@ def set_up_email(email)
 end
 end
 
+def set_up_password(password)
+if password.length > 7
+	"valid"
+else
+	"invalid"
+end
+end
+
