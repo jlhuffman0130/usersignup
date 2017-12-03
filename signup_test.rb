@@ -76,6 +76,12 @@ def test_assert_that_password_contains_a_number
 	assert_equal("valid", password_contains_number(password))
 end
 
+def test_assert_that_password_without_number_is_invalid
+	password = "password"
+assert_equal("invalid", password_contains_number(password))
+end
+
+
 
 
 
