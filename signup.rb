@@ -76,7 +76,22 @@ def password_has_character(password)
 	end
 end
 
+def password_contains_number(password)
+	hasnumber = false
+	number = [*(0..9)]
+password = password.to_s
+number.each do |digits|
+	if password.include?(digits.to_s)
+		hasnumber = true
+	end
+end
+	if hasnumber == true
+		return "valid"
+	else
+		return "invalid"
+	end
 
+end
 
 
 

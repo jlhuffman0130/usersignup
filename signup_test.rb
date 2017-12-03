@@ -71,7 +71,10 @@ def test_assert_that_password_with_no_special_character_is_invalid
 end
 
 
-
+def test_assert_that_password_contains_a_number
+	password = "password5"
+	assert_equal("valid", password_contains_number(password))
+end
 
 
 
