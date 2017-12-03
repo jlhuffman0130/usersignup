@@ -59,6 +59,22 @@ end
 end
 end
 
+def password_has_character(password)
+	hascharacter = false
+	character = ["!", "@","#", "$", "%", "^", "&", "*",]
+	password = password.to_s
+	character.each do |special|
+		if password.include?(special)
+			hascharacter = true
+		end
+		if hascharacter == true
+			return "valid"
+		else
+			return "invalid"
+		end
+	end
+end
+
 
 
 
