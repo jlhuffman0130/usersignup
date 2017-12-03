@@ -7,7 +7,7 @@ def set_up_username(username)
 end
 end
 
-def set_up_email(email)
+def set_up_email(email, verify_email)
 	email = email.to_s
 	if email = verify_email
 		"valid"
@@ -32,11 +32,12 @@ def password_has_uppercase(password)
 		if password.include?(characters)
 			hascapitalletter = true
 		end
+	
 
 		if hascapitalletter == true
-			return "valid"
-		end
-		if hascapitalletter == false
+			 return "valid"
+		else
+		
 			return "invalid"
 		end
 	end
