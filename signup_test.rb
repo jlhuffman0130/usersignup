@@ -54,3 +54,8 @@ def test_assert_that_password_with_no_uppercase_is_invalid
 	password = "password"
 	assert_equal("invalid", password_has_uppercase(password))
 end
+
+def test_assert_that_pasword_contains_lowercase
+	password = "password"
+	assert_equal("valid", password_has_lowercase(password))
+end

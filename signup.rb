@@ -42,5 +42,24 @@ def password_has_uppercase(password)
 	end
 end
 
+def password_has_lowercase(password)
+	haslowercase = false
+lowercase = [*('a'..'z')]
+password = password.to_s
+lowercase.each do |characters|
+	if password.include?(characters)
+haslowercase = true
+end
+if haslowercase == true
+	return "valid"
+end
+if haslowercase == false
+	return "invalid"
+end
+end
+end
+
+
+
 
 
