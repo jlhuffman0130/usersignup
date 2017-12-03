@@ -23,3 +23,9 @@ def test_assert_that_username_is_six_characters
 username = "jessica"
 assert_equal("valid", set_up_username(username))
 end
+
+def test_assert_that_email_is_string
+	email = "jlhuffman0130"
+	assert_equal(String, set_up_email(email))
+end
+
