@@ -13,3 +13,8 @@ def test_assert_that_usernames_are_strings
    username = "jessica"
    assert_equal(String, set_up_username(username))
 end
+
+def test_assert_that_integers_are_still_strings
+	username = 1234
+	assert_equal(String, set_up_username(username)) 
+end
