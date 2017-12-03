@@ -65,6 +65,11 @@ def test_assert_that_password_has_special_character
 	assert_equal("valid", password_has_character(password))
 end
 
+def test_assert_that_password_with_no_special_character_is_invalid
+	password = "password"
+	assert_equal("invalid", password_has_character(password))
+end
+
 
 
 
