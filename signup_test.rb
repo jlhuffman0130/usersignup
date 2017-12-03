@@ -29,3 +29,10 @@ def test_assert_that_email_is_string
 	assert_equal(String, set_up_email(email))
 end
 
+def test_assert_that_email_is_correct
+	email = "jhuffman0130"
+	verify_email = "jlhuffman0130"
+	assert_equal("valid", set_up_email(email, verify_email))
+end
+
+
