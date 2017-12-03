@@ -24,3 +24,23 @@ else
 end
 end
 
+def password_has_uppercase(password)
+	hascapitalletter = false
+	uppercase = [*('A'..'Z')]
+	password = password.to_s
+	uppercase.each do |characters|
+		if password.include?(characters)
+			hascapitalletter = true
+		end
+
+		if hascapitalletter == true
+			return "valid"
+		end
+		if hascapitalletter == false
+			return "invalid"
+		end
+	end
+end
+
+
+

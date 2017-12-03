@@ -44,3 +44,8 @@ def test_assert_that_password_with_five_characters_is_invalid
 	password = "passw"
 assert_equal("invalid", set_up_password(password))
 end
+
+def test_assert_that_password_has_an_uppercase
+	password = "Password"
+	assert_equal("valid", password_has_uppercase(password))
+end
