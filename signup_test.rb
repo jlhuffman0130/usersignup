@@ -35,4 +35,12 @@ def test_assert_that_email_is_correct
 	assert_equal("valid", set_up_email(email, verify_email))
 end
 
+def test_assert_that_password_is_eight_characters
+	password = "password"
+	assert_equal("valid", set_up_password(password))
+end 
 
+def test_assert_that_password_with_five_characters_is_invalid
+	password = "passw"
+assert_equal("invalid", set_up_password(password))
+end
